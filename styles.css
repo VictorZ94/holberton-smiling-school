@@ -1,0 +1,111 @@
+:root {
+    --color-primary: #C271FF;
+    --color-outline: #A88E68;
+}
+
+body {
+    font-family: 'source sans pro', sans-serif ;
+}
+
+.img-background {
+    background: url(/images/pic_1.jpg) no-repeat center;
+    width: 100%;
+    background-size: cover;
+}
+
+.fs1 {
+    font-size: 32px;
+}
+
+/* navbar responsive
+    ============================= */
+
+.header .menu-icon {
+    cursor: pointer;
+    user-select: none;
+    display: none;
+}
+
+.menu-btn:checked ~ .menu-icon {
+    outline: 4px solid var(--color-outline);
+}
+
+.menu-btn:checked ~ .navbar-menu {
+    display: block;
+}
+
+.menu-btn:checked ~ .navbar-menu .nav {
+    max-height: 100%;
+    overflow: inherit;
+}
+
+@media (max-width: 576px) {
+    .navbar-menu {
+        flex: 1;
+    }
+
+    .header .nav {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+}
+
+.list-group-item {
+    background: transparent!important;
+    border: none;
+}
+
+/* overwrite style button primary
+    ============================= */
+
+.button {
+    border-radius: 22px!important;
+    box-shadow: 5px 5px 22px #464545;
+}
+
+.btn-primary {
+    background-color: var(--color-primary)!important;
+    border-color: var(--color-primary)!important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    opacity: .9!important;
+    
+}
+
+.btn:active,
+.btn:focus {
+    box-shadow: 0 0 0 .2rem var(--color-primary) !important;
+    opacity: .9!important;
+}
+
+.color {
+    color: var(--color-primary);
+}
+
+.pros {
+    font-size: 2rem;
+}
+
+/* overwrite card pros
+    ============================= */
+
+.card {
+    background-color: transparent;
+    border: none;
+}
+
+.card .card-body p {
+    font-size: 14px;
+}
+
+.card-body {
+    margin: 0;
+}
