@@ -1,6 +1,7 @@
 :root {
     --color-primary: #C271FF;
     --color-outline: #A88E68;
+    --color-secondary: #071629;
 }
 
 body {
@@ -108,4 +109,82 @@ body {
 
 .card-body {
     margin: 0;
+}
+
+/* customize carousel
+    ============================= */
+
+.section-carousel {
+    background-color: var(--color-primary);
+}
+
+.img-carousel {
+    width: 180px;
+    height: 180px;
+}
+
+.holberton_school-icon-arrow_3, 
+.holberton_school-icon-arrow_4 {
+    font-size: 96px;
+}
+
+@media (max-width: 996px) {  
+
+    .img-carousel {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .holberton_school-icon-arrow_3, 
+    .holberton_school-icon-arrow_4 {
+        font-size: 64px;
+    }
+
+    .img-carousel {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Carousel of videos */
+
+.card-image {
+    top: 40px;
+    left: 80px;
+}
+
+.carousel-videos .card {
+    width: 235px;
+    height: 335px;
+}
+
+.carousel-videos h5 {
+    font-size: 16px;
+}
+
+.carousel-videos .card-text {
+    font-size: 14px;
+}
+
+.container-own {
+    max-width: 1000px;
+    margin: auto auto;
+}
+
+.carousel-videos .holberton_school-icon-arrow_3, 
+.carousel-videos .holberton_school-icon-arrow_4 {
+    color: var(--color-secondary);
+}
+
+@media (max-width: 768px) {
+    .carousel-videos .card {
+        width: 255px;
+    }
+
+    .card-image {
+        top: 50px;
+        left: 90px;
+    }
 }
