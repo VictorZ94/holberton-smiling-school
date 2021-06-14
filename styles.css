@@ -61,6 +61,10 @@ body {
     border: none;
 }
 
+.section-pros h2 {
+    font-size: 20px;
+}
+
 /* overwrite style button primary
     ============================= */
 
@@ -117,6 +121,9 @@ body {
 .section-carousel {
     background-color: var(--color-primary);
 }
+.section-carousel h3 {
+    font-size: 16px;
+}
 
 .img-carousel {
     width: 180px;
@@ -160,7 +167,7 @@ body {
     height: 335px;
 }
 
-.carousel-videos h5 {
+.carousel-videos h4 {
     font-size: 16px;
 }
 
@@ -212,4 +219,8 @@ svg > * {
 
 footer .list-group-item {
     padding: 10px;
+}
+
+.color-text {
+    color: var(--color-secondary);
 }
