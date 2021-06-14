@@ -191,7 +191,7 @@ body {
 
 /* row of smile */
 
-.section-smile {
+.section-smile, footer {
     background-color: var(--color-secondary);
 }
 
@@ -203,4 +203,13 @@ body {
     .section-smile .smile-margin {
         padding: 0 7rem;
     }
+}
+
+/* footer */
+svg > * {
+    fill: #FFFFFF;
+}
+
+footer .list-group-item {
+    padding: 10px;
 }
