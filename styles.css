@@ -188,3 +188,19 @@ body {
         left: 90px;
     }
 }
+
+/* row of smile */
+
+.section-smile {
+    background-color: var(--color-secondary);
+}
+
+.section-smile > * {
+    color: #FFFFFF;
+}
+
+@media (max-width: 576px) {
+    .section-smile .smile-margin {
+        padding: 0 7rem;
+    }
+}
