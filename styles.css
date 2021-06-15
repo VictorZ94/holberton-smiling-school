@@ -9,7 +9,17 @@ body {
 }
 
 .img-background {
-    background: url(/images/pic_1.jpg) no-repeat center;
+    background-image: url(/images/pic_1.jpg);
+}
+
+.img-background-pricing {
+    background-image: url(/images/pic_2.jpg);
+}
+
+.img-background, .img-background-pricing {
+    
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     background-size: cover;
 }
@@ -223,4 +233,30 @@ footer .list-group-item {
 
 .color-text {
     color: var(--color-secondary);
+}
+
+/* styles for Pricing webpage */
+.section-hero .display-4 {
+    font-size: 32px;
+}
+
+/* table.container {
+    max-width: 1110px;
+} */
+
+table > *{
+    color: #FFFFFF;
+}
+
+.holberton_school-icon-check {
+    font-size: 28px;
+    color: yellowgreen;
+}
+
+.section-hero-pricing .size {
+    font-size: 44px;
+}
+
+.no-border {
+    border-top: none!important;
 }
