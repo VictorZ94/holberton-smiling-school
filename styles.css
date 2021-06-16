@@ -244,10 +244,6 @@ footer .list-group-item {
     font-size: 32px;
 }
 
-/* table.container {
-    max-width: 1110px;
-} */
-
 table > *{
     color: #FFFFFF;
 }
@@ -288,3 +284,52 @@ table > *{
     font-family: 'coiny';
 }
 
+section.search {
+    background-color: var(--color-primary);
+}
+
+section.search > * {
+    color: #FFFFFF;
+}
+
+.search .title-search {
+    font-size: 12px;
+}
+
+.search .holberton_school-icon-search_1 {
+    font-size: 23px;
+}
+
+.search [type="search"], [type="search"]:focus,
+.search select, .search select:focus,
+.search .input-group .input-group-text {  
+    background: rgb(255, 255, 255, 0.3);
+    color: #FFFFFF;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.search [type="search"]::placeholder {
+    color: #FFFFFF;
+}
+
+.search select .option {
+    color: black;
+    font-size: 14px;
+}
+
+.search select.decorated option:hover {
+    /* color: var(--color-primary)!important;
+    background-color: var(--color-primary)!important; */
+    box-shadow: 0 0 10px 100px #1882A8 inset;
+}
+
+/* select:focus > option:checked { 
+    background: #000 !important;
+} */
+
+.section-result .card-image {
+    top: 30%;
+    left: 37%;  
+}
