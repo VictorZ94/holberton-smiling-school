@@ -262,6 +262,7 @@ table > *{
 }
 
 /* F.A.Q Section */
+
 .section-faq {
     max-width: 920px;
 }
@@ -282,6 +283,24 @@ table > *{
 
 .message h2 {
     font-family: 'coiny';
+}
+
+a.pricing::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(230, 225, 225);
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: .2rem;
+    border-radius: 22px;
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+.nav-item a.pricing, 
+.nav-item a.pricing::before {
+    color: var(--color-primary)!important;
+    width: 100%;
 }
 
 section.search {
@@ -320,14 +339,8 @@ section.search > * {
 }
 
 .search select.decorated option:hover {
-    /* color: var(--color-primary)!important;
-    background-color: var(--color-primary)!important; */
     box-shadow: 0 0 10px 100px #1882A8 inset;
 }
-
-/* select:focus > option:checked { 
-    background: #000 !important;
-} */
 
 .section-result .card-image {
     top: 30%;
