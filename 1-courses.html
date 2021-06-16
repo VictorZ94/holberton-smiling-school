@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Smile School</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Import this for using IcoMoon provide-->
+    <link rel="stylesheet" href="/holberton_school-icon/style.css">
+    <!-- Customize styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="img-background-courses pb-5">
+        <header class="container p-5">
+            <div class="row justify-content-between">
+
+                <!-- header logo -->
+                <div class="header-logo d-flex flex-column flex-sm-row text-center col-12 col-sm-1">
+                    <a href="homepage.html"><img src="/images/smile_off.png" aria-current="page" alt="smile off logo inside header" width="37" height="34"></a>
+                    <a href="homepage.html"><img src="/images/logo.png" class="pl-3 pt-2" alt="text logo inside header" width="113" height="34"></a>
+                </div>
+
+                <input type="checkbox" class="menu-btn d-none" id="menu-btn">
+                <label class="menu-icon p-1 d-block d-sm-none position-absolute top-0" for="menu-btn"><span class="holberton_school-icon-menu text-white p-2 fs1"></span></label>
+
+                <!-- menu-var nav -->
+                <nav class="navbar-menu m-0 p-0">
+                    <ul class="nav flex-column flex-sm-row text-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-uppercase" href="#">courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-uppercase" href="#">pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-uppercase" href="#">login</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="message text-center d-none d-sm-block">
+            <h2 class="text-white">&#171; Don't cry because it's over.</h2>
+            <h2 class="text-white"><span class="color">Smile</span> because it happened. &#187;</h2>
+        </section>
+    </main>
+    <!-- section search -->
+    <section class="search py-5">
+        <div class="container">
+            <form action="">
+                <div class="row">
+                    <div class="col-12 col-md input-group mb-3 mb-md-0">
+                        <div class="col-12 px-0">
+                            <label for="search" class="title-search text-uppercase">keywords</label>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text holberton_school-icon-search_1" id="basic-addon1"></span>
+                            </div>
+                            <input type="search" class="form-control" name="search" id="search" placeholder="Search by keyword" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm input-group mb-3 mb-sm-0">
+                        <div class="col-12 px-0">
+                            <label class="title-search text-uppercase">topic</label>
+                        </div>
+                        <select class="form-control rounded" id="topic" name="topic" aria-label="Select with button addon">
+                            <option value="1" class="option" selected>Novice</option>
+                            <option value="2" class="option">Intermediate</option>
+                            <option value="3" class="option">Expert</option>
+                        </select>
+                    </div>
+                    <div class="col input-group">
+                        <div class="col-12 px-0">
+                            <label class="title-search text-uppercase">sort by</label>
+                        </div>
+                        <select class="form-control rounded" id="topic" name="topic" aria-label="Select with button addon">
+                            <option value="1" class="option" selected>Most Popular</option>
+                            <option value="2" class="option">Most Recent</option>
+                            <option value="3" class="option">Most View</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

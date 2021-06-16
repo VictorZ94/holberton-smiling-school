@@ -16,6 +16,10 @@ body {
     background-image: url(/images/pic_2.jpg);
 }
 
+.img-background-courses {
+    background-image: url(/images/pic_3.jpg);
+}
+
 .img-background, .img-background-pricing {
     
     background-repeat: no-repeat;
@@ -277,3 +281,10 @@ table > *{
 .section-faq p {
     font-size: 14px;
 }
+
+/* Style for courses page */
+
+.message h2 {
+    font-family: 'coiny';
+}
+
